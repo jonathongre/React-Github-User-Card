@@ -1,10 +1,13 @@
 
 .page {
   margin: auto;
+  color: #fff;
+  text-shadow: 1px 1px 5px black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  background: #000;
 }
 
 a {
@@ -14,6 +17,7 @@ a {
 
 .card-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -48,4 +52,11 @@ a {
   background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%);
   color: #fff;
   box-shadow: 1px 1px 10px black;
+}
+
+.github-chart {
+  margin: auto;
+  margin-top: 2rem;
+  width: 50rem;
+  background:transparent;
 }

@@ -35,6 +35,7 @@ export default class Data extends Component {
     console.log("State userData: ", this.state.userData);
     return (
         <div className='page'>
+        <h1>{this.state.userData.name}'s GitHub</h1>    
         <UserCard user={this.state.userData} />
         <h2>Followers</h2>
         {this.state.followersData.map(follower => (

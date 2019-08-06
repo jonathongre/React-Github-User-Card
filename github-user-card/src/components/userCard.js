@@ -16,7 +16,12 @@ export default class UserCard extends Component {
                     <h4>Location: {this.props.user.location}</h4>
                     <p>{this.props.user.bio}</p>
                 </div>
+                
             </div></a>
+            <div className='github-chart'>
+            <img src="http://ghchart.rshah.org/jonathongre" alt="Jonathon's Github chart" />
+            <p>Jonathon's Github chart</p>
+            </div>
             </div>
         )
     }

@@ -1,0 +1,78 @@
+html {
+  
+  background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(166,166,166,1) 85%, rgba(228,228,228,1) 100%); 
+}
+
+
+
+.page {
+  margin: auto;
+  color: #fff;
+  text-shadow: 1px 1px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user-card {
+  background: linear-gradient(149deg, rgba(124,200,85,1) 17%, rgba(108,158,107,1) 57%, rgba(46,70,45,1) 100%); 
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  width: 40rem;
+  color: #fff;
+  box-shadow: 1px 1px 10px black;
+}
+
+.user-image {
+  height: 10rem;
+  box-shadow: 1px 1px 10px black;
+}
+
+.user-info {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-shadow: 1px 1px 5px #3a3a3a;
+  background: transparent;
+}
+
+.follower-card {
+  margin: 2rem auto;
+  display: flex;
+  width: 30rem;
+  
+  color: #fff;
+  
+}
+
+.github-chart {
+  margin: auto;
+  margin-top: 2rem;
+  width: 50rem;
+  background:transparent;
+}
+
+.follower-container {
+  display: flex;
+  margin: 2rem auto;
+  width: 70%;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 1px 1px 20px white;
+  background: radial-gradient(circle, #7cc855 17%, #6c9e6b 57%, #2e462d 100%);
+}

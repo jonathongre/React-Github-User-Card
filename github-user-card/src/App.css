@@ -31,3 +31,23 @@
     transform: rotate(360deg);
   }
 }
+
+.user-card {
+  margin: auto;
+  margin-top: 3rem;
+  display: flex;
+  width: 40rem;
+  box-shadow: 1px 1px 10px black;
+}
+
+.user-image {
+  height: 100%;
+}
+
+.user-info {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -19,8 +19,8 @@ export default class UserCard extends Component {
                 
             </div></a>
             <div className='github-chart'>
-            <img src="http://ghchart.rshah.org/jonathongre" alt="Jonathon's Github chart" />
-            <p>Jonathon's Github chart</p>
+            <img src={`http://ghchart.rshah.org/${this.props.user.login}`} alt={`${this.props.user.login}'s Github char`} />
+            <p>{this.props.user.login}'s Github chart</p>
             </div>
             </div>
         )

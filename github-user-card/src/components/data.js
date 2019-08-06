@@ -9,6 +9,7 @@ export default class Data extends Component {
         this.state = {
             userData: '',
             followersData: [''],
+            followingData: ['']
         };
     }
 
@@ -30,6 +31,14 @@ export default class Data extends Component {
         this.setState({ followersData: response.data });
       })
       .catch(error => console.log("Error: ", error));
+
+      const userFollowing = axios
+      .get("https://api.github.com/users/jonathongre/following")
+      .then(response => {
+        console.log("Following Data: ", response.data);
+        this.setState({ followingData: response.data });
+      })
+      .catch(error => console.log("Error: ", error));
   }
   render() {
     console.log("State userData: ", this.state.userData);
@@ -41,6 +50,10 @@ export default class Data extends Component {
         {this.state.followersData.map(follower => (
             <FollowerCard follower={follower} />
         ))}
+        <h2>Following</h2>
+        {this.state.followingData.map(follower => (
+            <FollowerCard follower={follower} />
+            ))}
         </div>
     );
   }
